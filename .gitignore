@@ -1,0 +1,4 @@
+.cache
+.config
+contest/**/tests/
+.DS_Store
