@@ -11,7 +11,6 @@ WORKDIR /code
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    time \
     npm \
     vim \
     pypy3 \
