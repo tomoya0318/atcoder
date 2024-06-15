@@ -1,6 +1,13 @@
 def main():
-    N, M = map(int, input().split())
+    N = int(input())
     A = list(map(int, input().split()))
-    X = [list(map(int, input().split())) for _ in range(N)]
+    A = sorted(A, reverse = True)
+    ans = 0
+    for i in range(N):
+        if i % 2 == 0:
+            ans += A[i]
+        else:
+            ans -= A[i]
+    print(abs(ans))
 
 main()

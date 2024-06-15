@@ -1,6 +1,7 @@
+import sys
 def main():
-    N, M = map(int, input().split())
-    A = list(map(int, input().split()))
-    X = [list(map(int, input().split())) for _ in range(N)]
+    line = sys.stdin.read().strip()
+    N, *d = line.split("\n")
 
+    print(len(set(d)))
 main()
