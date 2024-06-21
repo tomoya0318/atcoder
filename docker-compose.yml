@@ -4,7 +4,7 @@ services:
   atcoder:
     build:
       context: .
-      dockerfile: .devcontainer/Dockerfile  # Dockerfileが.devcontainer内にある場合
+      dockerfile: .devcontainer/Dockerfile  
     tty: true
     volumes:
       - type: bind
@@ -17,4 +17,4 @@ services:
         source: .config
         target: /root/.config
     ports:
-      - "8000:8000"
+      - "1234:1234"
